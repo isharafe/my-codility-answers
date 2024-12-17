@@ -10,6 +10,13 @@ import java.util.stream.Collectors;
  */
 public class Solution {
 
+    private static final String DEFAULT_DELIM = ",|/n";
+    private static final String DELIM_SEPARATOR = "\\|";
+    private static final String DELIM_COMBINER = "|";
+    private static final String DELIM_STARTER = "//";
+    private static final String DELIM_END = "\n";
+    private static final Integer MAX_VALUE = 1000;
+
     public int add(String numbers) {
         if(numbers == null || numbers.isEmpty()) {
             return 0;
